@@ -23,7 +23,7 @@
 
 <header class="phead"><div class="wrap"><h1>지의류</h1><p>두 생물계가 이루는 공생, 그리고 그 안의 또 다른 미생물</p></div></header>
 <section><div class="wrap"><div style="max-width:760px">
-<div class="prose"><p>지의류는 지의류형성균과 광합성생물이 결합해 하나의 개체처럼 살아가는 생물입니다. 서로 다른 생물계에 속한 생물이 이렇게 긴밀한 관계를 이루는 사례는 흔하지 않아, 공생을 연구하는 대상으로 오래 주목받아 왔습니다.</p><p>최근에는 이 관계가 두 생물만의 것이 아니라는 점이 알려졌습니다. 지의체 안에는 내생지의류균을 비롯한 여러 미생물이 함께 살아가고 있습니다.</p></div><div class="note">여기에서는 주로 첫 번째와 세 번째 질문을 다룹니다. 지의체 안에 어떤 생물들이 살고 있는지를 밝히고, 지의류 개체군이 어떻게 나뉘고 퍼져 왔는지를 추적합니다.</div><h3>지의체 안의 미생물</h3><p style="color:var(--mut)">지의류에서 내생지의류균을 분리하고 배양하여 그 다양성을 조사해 왔습니다. 제주도의 지의류를 대상으로 내생지의류균이 어떤 종들로 이루어져 있고 지역과 숙주에 따라 어떻게 분포하는지를 살펴보았습니다. 이 과정에서 새로운 <i>Trichoderma</i> 종과 국내에 기록되지 않았던 여러 종을 기재했습니다.</p><p style="color:var(--mut)">지의류형성균과 광합성생물이라는 잘 알려진 두 축 외에, 어떤 생물들이 이 공생계에 함께 참여하고 있는지를 확인하는 작업입니다.</p><h3>엽상지의류의 분포와 유전 구조</h3><p style="color:var(--mut)">잎에 붙어 자라는 엽상지의류 <i>Strigula</i>를 대상으로, 개체군이 지리적으로 어떻게 나뉘어 있고 어떤 경로로 확산해 왔는지를 조사하고 있습니다.</p><p style="color:var(--mut)">제주도의 <i>Strigula multiformis</i> 개체군에서 유전 구조를 분석했고, 이어서 한국산 <i>Strigula depressa</i>의 분포와 유전다양성을 조사했습니다. 공생생물의 개체군이 어떻게 분화하는지는 그 공생 관계가 어떻게 유지되고 퍼져 왔는지와 이어지는 문제라고 보고 있습니다.</p>
+<div class="prose"><p>지의류는 지의류형성균과 광합성생물이 결합해 하나의 개체처럼 살아가는 생물입니다. 서로 다른 생물계에 속한 생물이 이렇게 긴밀한 관계를 이루는 사례는 흔하지 않아, 공생을 연구하는 대상으로 오래 주목받아 왔습니다.</p><p>최근에는 이 관계가 두 생물만의 것이 아니라는 점이 알려졌습니다. 지의체 안에는 내생지의류균을 비롯한 여러 미생물이 함께 살아가고 있습니다.</p></div><h3>지의체 안의 미생물</h3><p style="color:var(--mut)">지의류에서 내생지의류균을 분리하고 배양하여 그 다양성을 조사해 왔습니다. 제주도의 지의류를 대상으로 내생지의류균이 어떤 종들로 이루어져 있고 지역과 숙주에 따라 어떻게 분포하는지를 살펴보았습니다. 이 과정에서 새로운 <i>Trichoderma</i> 종과 국내에 기록되지 않았던 여러 종을 기재했습니다.</p><p style="color:var(--mut)">지의류형성균과 광합성생물이라는 잘 알려진 두 축 외에, 어떤 생물들이 이 공생계에 함께 참여하고 있는지를 확인하는 작업입니다.</p><h3>엽상지의류의 분포와 유전 구조</h3><p style="color:var(--mut)">잎에 붙어 자라는 엽상지의류 <i>Strigula</i>를 대상으로, 개체군이 지리적으로 어떻게 나뉘어 있고 어떤 경로로 확산해 왔는지를 조사하고 있습니다.</p><p style="color:var(--mut)">제주도의 <i>Strigula multiformis</i> 개체군에서 유전 구조를 분석했고, 이어서 한국산 <i>Strigula depressa</i>의 분포와 유전다양성을 조사했습니다. 공생생물의 개체군이 어떻게 분화하는지는 그 공생 관계가 어떻게 유지되고 퍼져 왔는지와 이어지는 문제라고 보고 있습니다.</p>
 </div></div></section>
 <section class="soft"><div class="wrap">
   <p class="kick">SELECTED PUBLICATIONS</p>
@@ -92,8 +92,7 @@ function memberGroups(host, en){
     by[m[2]].push(m);
   });
   order.forEach(function(role){
-    t.appendChild(el('<div class="grp">'+(en?T(role):role)+
-      '<span>'+by[role].length+'</span></div>'));
+    t.appendChild(el('<div class="grp">'+(en?T(role):role)+'</div>'));
     var g = el('<div class="people"></div>');
     by[role].forEach(function(m){
       g.appendChild(el('<div class="pcard">'+photo(m[4], en?m[1]:m[0], en?'PHOTO':'사진')+'<b>'+
