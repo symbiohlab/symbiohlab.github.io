@@ -706,7 +706,7 @@ const MEMBERS = [
     "우정재",
     "Jung-Jae Woo",
     "박사후연구원",
-    "경남생명항노화 핵심연구지원센터",
+    "경남생명항노화 핵심연구지원센터 공동연구",
     "Jung-JaeWoo.jpg"
   ],
   [
@@ -783,7 +783,8 @@ const EN_TERMS = {
   "연구원":              "Researcher",
   "국립산림과학원":        "National Institute of Forest Science",
   "국립수목원":           "Korea National Arboretum",
-  "경남생명항노화 핵심연구지원센터": "Gyeongnam Bio &amp; Anti-aging Core Facility Center",
+  "경남생명항노화 핵심연구지원센터 공동연구":
+      "Joint research with Gyeongnam Bio &amp; Anti-aging Core Facility Center",
   "G-LAMP 공동연구":      "Joint research with G-LAMP"
 };
 
