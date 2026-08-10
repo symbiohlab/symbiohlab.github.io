@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>구성원 | 공생미생물연구실</title>
+<meta name="description" content="공생미생물연구실 구성원과 졸업생.">
+<meta property="og:title" content="구성원 | 공생미생물연구실">
+<meta property="og:description" content="공생미생물연구실 구성원과 졸업생.">
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<nav class="nav"><div class="wrap">
+  <a class="logo" href="index.html"><img src="assets/logo.png" alt="Symbioh Lab"></a>
+  <button class="burger" aria-label="menu" onclick="document.getElementById('m').classList.toggle('open')">☰</button>
+  <div class="menu" id="m"><a href="index.html">홈</a><span class="sub"><a href="research.html">연구</a><span class="subm"><a href="lichen.html">지의류</a><a href="matsutake.html">송이</a><a href="diversity.html">다양성과 군집 패턴</a><a href="animals.html">동물</a></span></span><a href="publications.html">논문</a><a href="people.html" class="on">구성원</a><a href="news.html">소식</a><a href="join.html" class="j">참여하기</a><a href="en/index.html" class="lang">EN</a></div>
+</div></nav>
+
+<header class="phead"><div class="wrap"><h1>구성원</h1>
+  <p>공생미생물연구실에서 함께 연구하는 사람들입니다.</p></div></header>
+
+<section><div class="wrap">
+  <div class="pi">
+    <div class="ph">사진</div>
+    <div>
+      <h2>오승윤 <span style="font-weight:400;color:var(--mut);font-size:19px">Seung-yoon Oh</span></h2>
+      <p class="role">부교수 · 미생물생태진화</p>
+      <p style="color:var(--mut);margin:0 0 16px">국립창원대학교 GAST-인공지능대학 AI생명과학전공<br>
+        syoh@changwon.ac.kr · 055-213-3453</p>
+      <div class="prose">
+        <p>공생미생물의 생태와 진화를 연구합니다. 지의류와 식물, 절지동물과 수생 환경 등 서로 다른
+          공생계를 비교하면서, 함께 살아가는 관계가 어떻게 작동하고 환경에 따라 어떻게 달라지며
+          어떻게 생겨났는지를 살펴보고 있습니다.</p>
+        <p>야외 조사와 배양, 오믹스 분석과 분류학적 기재를 함께 사용하며, 새로 확인한 생물에
+          이름을 붙이는 일도 연구의 한 부분이라고 생각합니다.</p>
+      </div>
+      <div class="btns" style="margin-top:18px">
+        <a class="b3" href="https://scholar.google.com/citations?user=5TjyDbQAAAAJ">Google Scholar</a>
+        <a class="b3" href="https://orcid.org/0000-0002-9745-1849">ORCID</a>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="margin-top:44px">학력</h3>
+  <div class="cv"><div class="y">2013–2018</div><div>서울대학교 생명과학부 박사</div></div>
+  <div class="cv"><div class="y">2006–2013</div><div>서울대학교 자연과학대학 이학사</div></div>
+
+  <h3>경력</h3>
+  <div class="cv"><div class="y">2024.04–현재</div><div>국립창원대학교 부교수</div></div>
+  <div class="cv"><div class="y">2020–2024</div><div>국립창원대학교 조교수</div></div>
+  <div class="cv"><div class="y">2018–2020</div><div>국립순천대학교 지의류연구센터 박사후연구원</div></div>
+  <div class="cv"><div class="y">2018</div><div>서울대학교 자연과학대학 박사후연구원</div></div>
+</div></section>
+
+<section class="soft"><div class="wrap">
+  <p class="kick">MEMBERS</p>
+  <h2 style="margin-bottom:26px">연구원</h2>
+  <div class="people" id="mcards"></div>
+  <div class="rows" style="margin-top:30px" id="mrows"></div>
+</div></section>
+
+<section><div class="wrap">
+  <p class="kick">ALUMNI</p>
+  <h2>함께했던 사람들</h2>
+  <p class="lead">연구실을 거쳐 간 분들이 지금 어디에서 연구를 이어가고 있는지 적어둡니다.</p>
+  <div class="rows" id="arows"></div>
+</div></section>
+<script src="content.js"></script>
+<script>
+function el(h){var d=document.createElement('div');d.innerHTML=h.trim();return d.firstChild;}
+function ymd(s){var p=(s||'').split('.');return {y:p[0]||'',m:p[1]||'00',d:p[2]||'00'};}
+var MON=['','JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+
+function newsCards(host, n){
+  var t=document.getElementById(host); if(!t) return;
+  NEWS.slice(0,n).forEach(function(x){
+    var v=ymd(x[0]), mi=parseInt(v.m,10)||0;
+    t.appendChild(el('<div class="ni"><div class="d"><b>'+(v.d==='00'?'–':v.d)+'</b><span>'+
+      (MON[mi]||v.y)+'</span></div><div class="t">'+x[1]+
+      (x[2]?'<span>'+x[2]+'</span>':'')+'</div></div>'));
+  });
+}
+function newsAll(host){
+  var t=document.getElementById(host); if(!t) return;
+  NEWS.forEach(function(x){
+    t.appendChild(el('<div class="ni"><div class="d">'+x[0].replace(/\.00/g,'')+
+      '</div><div class="t">'+x[1]+(x[2]?'<span>'+x[2]+'</span>':'')+'</div></div>'));
+  });
+}
+function pubList(host, filterNos){
+  var t=document.getElementById(host); if(!t) return;
+  var rows = filterNos ? filterNos.map(function(n){
+        return PUBLICATIONS.filter(function(p){return p[0]===n;})[0];}).filter(Boolean)
+      : PUBLICATIONS;
+  var lastY=null;
+  rows.forEach(function(p){
+    if(!filterNos && p[1]!==lastY){ lastY=p[1]; t.appendChild(el('<div class="yr">'+p[1]+'</div>')); }
+    t.appendChild(el('<div class="pub"><div class="no">'+(filterNos?'':p[0])+
+      '</div><div><div class="ti">'+p[3]+'</div><div class="au">'+p[2]+
+      '</div><div class="ve">'+p[4]+'</div></div></div>'));
+  });
+}
+function memberCards(host){
+  var t=document.getElementById(host); if(!t) return;
+  MEMBERS.forEach(function(m){
+    t.appendChild(el('<div class="pcard"><div class="ph">사진</div><b>'+m[0]+
+      '</b><span>'+m[2]+(m[3]?'<br>'+m[3]:'')+'</span></div>'));
+  });
+}
+function memberRows(host){
+  var t=document.getElementById(host); if(!t) return;
+  MEMBERS.forEach(function(m){
+    t.appendChild(el('<div class="row"><div class="k">'+m[0]+' <span style="color:#8b9490;font-weight:400">'+
+      m[1]+'</span></div><div class="v">'+m[2]+(m[3]?' · '+m[3]:'')+'</div></div>'));
+  });
+}
+function alumniRows(host){
+  var t=document.getElementById(host); if(!t) return;
+  ALUMNI.forEach(function(a){
+    t.appendChild(el('<div class="row"><div class="k">'+a[0]+' <span style="color:#8b9490;font-weight:400">'+
+      a[1]+'</span></div><div class="v">'+a[2]+' → '+a[3]+'</div></div>'));
+  });
+}
+</script>
+<script>memberCards('mcards');alumniRows('arows');</script><footer><div class="wrap">
+  <div><img src="assets/logo.png" alt=""><b>공생미생물연구실</b>Laboratory of Microbial Symbiosis<br>국립창원대학교 GAST-인공지능대학<br>AI생명과학전공</div>
+  <div><b>연락처</b>syoh@changwon.ac.kr<br>055-213-3453</div>
+  <div><b>바로가기</b><a href="https://scholar.google.com/citations?user=5TjyDbQAAAAJ">Google Scholar</a><br><a href="https://orcid.org/0000-0002-9745-1849">ORCID</a><br><a href="https://symbiohlab.blogspot.com">연구실 블로그</a></div>
+</div><div class="copy">© Laboratory of Microbial Symbiosis, Changwon National University</div></footer>
+</body></html>
