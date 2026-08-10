@@ -772,6 +772,21 @@ const ALUMNI = [
   ]
 ];
 
+/* ── 영문 페이지에서 쓸 번역 ────────────────────────────
+   왼쪽(한글)을 오른쪽(영문)으로 바꿔서 영문 페이지에 표시합니다.
+   목록에 없는 말은 한글 그대로 나옵니다.                     */
+const EN_TERMS = {
+  "박사과정":            "Ph.D. Student",
+  "박사후연구원":         "Postdoctoral Researcher",
+  "전임연구원":           "Researcher",
+  "석사 졸업":            "M.S.",
+  "연구원":              "Researcher",
+  "국립산림과학원":        "National Institute of Forest Science",
+  "국립수목원":           "Korea National Arboretum",
+  "Life Aging Center 공동연구": "Joint research with Life Aging Center",
+  "G-LAMP 공동연구":      "Joint research with G-LAMP"
+};
+
 /* ── 어느 논문을 어디에 보여줄지 ────────────────────────
    위 PUBLICATIONS 목록의 '번호'만 적으면 됩니다.
    적은 순서대로 화면에 표시됩니다.                          */

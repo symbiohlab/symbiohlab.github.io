@@ -84,7 +84,7 @@ var MON=['','JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','D
 var UP='';
 function photo(f, alt, ph){
   return f ? '<img src="'+UP+'assets/members/'+f+'" alt="'+alt+'" loading="lazy" '+
-             'style="aspect-ratio:4/3;width:100%;object-fit:cover;object-position:center 30%">'
+             'style="aspect-ratio:3/4;width:100%;object-fit:cover;object-position:center 22%">'
            : '<div class="ph">'+ph+'</div>';
 }
 
@@ -119,18 +119,33 @@ function pubList(host, filterNos){
       '</div><div class="ve">'+p[4]+dl+'</div></div></div>'));
   });
 }
-function memberCards(host){
+function T(s){ return (typeof EN_TERMS!=='undefined' && EN_TERMS[s]) ? EN_TERMS[s] : s; }
+function memberCards(host, en, limit){
   var t=document.getElementById(host); if(!t) return;
-  MEMBERS.forEach(function(m){
-    t.appendChild(el('<div class="pcard">'+photo(m[4],m[0],'사진')+'<b>'+m[0]+
-      '</b><span>'+m[2]+(m[3]?'<br>'+m[3]:'')+'</span></div>'));
+  MEMBERS.slice(0, limit||MEMBERS.length).forEach(function(m){
+    t.appendChild(el('<div class="pcard">'+photo(m[4], en?m[1]:m[0], en?'PHOTO':'사진')+'<b>'+
+      (en?m[1]:m[0])+'</b><span>'+(en?T(m[2]):m[2])+
+      (m[3]?'<br>'+(en?T(m[3]):m[3]):'')+'</span></div>'));
   });
 }
-function memberRows(host){
+/* 직위별로 묶어서 보여줍니다 (등장 순서 유지) */
+function memberGroups(host, en){
   var t=document.getElementById(host); if(!t) return;
+  var order=[], by={};
   MEMBERS.forEach(function(m){
-    t.appendChild(el('<div class="row"><div class="k">'+m[0]+' <span style="color:#8b9490;font-weight:400">'+
-      m[1]+'</span></div><div class="v">'+m[2]+(m[3]?' · '+m[3]:'')+'</div></div>'));
+    if(!by[m[2]]){ by[m[2]]=[]; order.push(m[2]); }
+    by[m[2]].push(m);
+  });
+  order.forEach(function(role){
+    t.appendChild(el('<div class="grp">'+(en?T(role):role)+
+      '<span>'+by[role].length+'</span></div>'));
+    var g = el('<div class="people"></div>');
+    by[role].forEach(function(m){
+      g.appendChild(el('<div class="pcard">'+photo(m[4], en?m[1]:m[0], en?'PHOTO':'사진')+'<b>'+
+        (en?m[1]:m[0])+'</b><span>'+(en?T(m[2]):m[2])+
+        (m[3]?'<br>'+(en?T(m[3]):m[3]):'')+'</span></div>'));
+    });
+    t.appendChild(g);
   });
 }
 function alumniRows(host){
@@ -143,12 +158,13 @@ function alumniRows(host){
 function alumniCards(host, en){
   var t=document.getElementById(host); if(!t) return;
   ALUMNI.forEach(function(a){
-    t.appendChild(el('<div class="pcard">'+photo(a[4],a[0],en?'PHOTO':'사진')+'<b>'+
-      (en?a[1]:a[0])+'</b><span>'+a[2]+'<br><span class="now">→ '+a[3]+'</span></span></div>'));
+    t.appendChild(el('<div class="pcard">'+photo(a[4], en?a[1]:a[0], en?'PHOTO':'사진')+'<b>'+
+      (en?a[1]:a[0])+'</b><span>'+(en?T(a[2]):a[2])+'<br><span class="now">→ '+
+      (en?T(a[3]):a[3])+'</span></span></div>'));
   });
 }
 </script>
-<script>newsCards('news-home',4);pubList('pub-home',HOME_PUBS);memberCards('people-home');document.querySelectorAll('#people-home .pcard').forEach(function(c,i){if(i>3)c.remove();});</script><footer><div class="wrap">
+<script>newsCards('news-home',4);pubList('pub-home',HOME_PUBS);memberCards('people-home',false,4);</script><footer><div class="wrap">
   <div><img src="assets/logo.png" alt=""><b>공생미생물연구실</b>Laboratory of Microbial Symbiosis<br>국립창원대학교 GAST-인공지능대학<br>AI생명과학전공</div>
   <div><b>연락처</b>syoh@changwon.ac.kr<br>055-213-3453</div>
   <div><b>바로가기</b><a href="https://scholar.google.com/citations?user=5TjyDbQAAAAJ">Google Scholar</a><br><a href="https://orcid.org/0000-0002-9745-1849">ORCID</a><br><a href="https://symbiohlab.blogspot.com">연구실 블로그</a></div>

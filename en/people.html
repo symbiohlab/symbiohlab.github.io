@@ -16,7 +16,7 @@
 </head>
 <body>
 <nav class="nav"><div class="wrap">
-  <a class="logo" href="../index.html"><img src="../assets/logo.png" alt="Symbioh Lab"></a>
+  <a class="logo" href="index.html"><img src="../assets/logo.png" alt="Symbioh Lab"></a>
   <button class="burger" aria-label="menu" onclick="document.getElementById('m').classList.toggle('open')">☰</button>
   <div class="menu" id="m"><a href="index.html">Home</a><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="people.html" class="on">People</a><a href="join.html" class="j">Join Us</a><a href="../index.html" class="lang">한국어</a></div>
 </div></nav>
@@ -55,7 +55,7 @@
 
 <section class="soft"><div class="wrap">
   <p class="kick">MEMBERS</p><h2 style="margin-bottom:20px">Members</h2>
-  <div class="rows" id="mrows"></div>
+  <div id="mgroups"></div>
 </div></section>
 <section><div class="wrap">
   <p class="kick">ALUMNI</p><h2 style="margin-bottom:20px">Alumni</h2>
@@ -69,7 +69,7 @@ var MON=['','JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','D
 var UP='../';
 function photo(f, alt, ph){
   return f ? '<img src="'+UP+'assets/members/'+f+'" alt="'+alt+'" loading="lazy" '+
-             'style="aspect-ratio:4/3;width:100%;object-fit:cover;object-position:center 30%">'
+             'style="aspect-ratio:3/4;width:100%;object-fit:cover;object-position:center 22%">'
            : '<div class="ph">'+ph+'</div>';
 }
 
@@ -104,18 +104,33 @@ function pubList(host, filterNos){
       '</div><div class="ve">'+p[4]+dl+'</div></div></div>'));
   });
 }
-function memberCards(host){
+function T(s){ return (typeof EN_TERMS!=='undefined' && EN_TERMS[s]) ? EN_TERMS[s] : s; }
+function memberCards(host, en, limit){
   var t=document.getElementById(host); if(!t) return;
-  MEMBERS.forEach(function(m){
-    t.appendChild(el('<div class="pcard">'+photo(m[4],m[0],'사진')+'<b>'+m[0]+
-      '</b><span>'+m[2]+(m[3]?'<br>'+m[3]:'')+'</span></div>'));
+  MEMBERS.slice(0, limit||MEMBERS.length).forEach(function(m){
+    t.appendChild(el('<div class="pcard">'+photo(m[4], en?m[1]:m[0], en?'PHOTO':'사진')+'<b>'+
+      (en?m[1]:m[0])+'</b><span>'+(en?T(m[2]):m[2])+
+      (m[3]?'<br>'+(en?T(m[3]):m[3]):'')+'</span></div>'));
   });
 }
-function memberRows(host){
+/* 직위별로 묶어서 보여줍니다 (등장 순서 유지) */
+function memberGroups(host, en){
   var t=document.getElementById(host); if(!t) return;
+  var order=[], by={};
   MEMBERS.forEach(function(m){
-    t.appendChild(el('<div class="row"><div class="k">'+m[0]+' <span style="color:#8b9490;font-weight:400">'+
-      m[1]+'</span></div><div class="v">'+m[2]+(m[3]?' · '+m[3]:'')+'</div></div>'));
+    if(!by[m[2]]){ by[m[2]]=[]; order.push(m[2]); }
+    by[m[2]].push(m);
+  });
+  order.forEach(function(role){
+    t.appendChild(el('<div class="grp">'+(en?T(role):role)+
+      '<span>'+by[role].length+'</span></div>'));
+    var g = el('<div class="people"></div>');
+    by[role].forEach(function(m){
+      g.appendChild(el('<div class="pcard">'+photo(m[4], en?m[1]:m[0], en?'PHOTO':'사진')+'<b>'+
+        (en?m[1]:m[0])+'</b><span>'+(en?T(m[2]):m[2])+
+        (m[3]?'<br>'+(en?T(m[3]):m[3]):'')+'</span></div>'));
+    });
+    t.appendChild(g);
   });
 }
 function alumniRows(host){
@@ -128,12 +143,13 @@ function alumniRows(host){
 function alumniCards(host, en){
   var t=document.getElementById(host); if(!t) return;
   ALUMNI.forEach(function(a){
-    t.appendChild(el('<div class="pcard">'+photo(a[4],a[0],en?'PHOTO':'사진')+'<b>'+
-      (en?a[1]:a[0])+'</b><span>'+a[2]+'<br><span class="now">→ '+a[3]+'</span></span></div>'));
+    t.appendChild(el('<div class="pcard">'+photo(a[4], en?a[1]:a[0], en?'PHOTO':'사진')+'<b>'+
+      (en?a[1]:a[0])+'</b><span>'+(en?T(a[2]):a[2])+'<br><span class="now">→ '+
+      (en?T(a[3]):a[3])+'</span></span></div>'));
   });
 }
 </script>
-<script>memberRows('mrows');alumniCards('acards',true);</script><footer><div class="wrap">
+<script>memberGroups('mgroups',true);alumniCards('acards',true);</script><footer><div class="wrap">
   <div><img src="../assets/logo.png" alt=""><b>Laboratory of Microbial Symbiosis</b>Symbioh Lab<br>Department of AI-Integrated Biological Sciences<br>Glocal Advanced Institute of Science &amp; Technology - Artificial Intelligence<br>Changwon National University</div>
   <div><b>Contact</b>syoh@changwon.ac.kr<br>+82-55-213-3453</div>
   <div><b>Links</b><a href="https://scholar.google.com/citations?user=5TjyDbQAAAAJ">Google Scholar</a><br><a href="https://orcid.org/0000-0002-9745-1849">ORCID</a><br><a href="https://symbiohlab.blogspot.com">Blog</a></div>
