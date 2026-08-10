@@ -674,87 +674,101 @@ const NEWS = [
 ];
 
 /* ── 현재 구성원 ─────────────────────────────────────────
-   순서: [이름, 영문이름, 직위, 비고]
+   순서: [이름, 영문이름, 직위, 비고, 사진파일명]
    비고가 없으면 "" 로 비워 두세요.
+   사진은 assets/members/ 폴더에 넣고 파일 이름만 적습니다.
+   대소문자와 확장자(.jpg / .PNG)를 정확히 맞춰야 합니다.
+   사진이 없으면 "" 로 두면 회색 상자가 나옵니다.
    여기 적힌 순서 그대로 사이트에 표시됩니다.                 */
 const MEMBERS = [
   [
     "차예현",
     "Yehyeon Cha",
     "박사과정",
-    ""
+    "",
+    "YehyeonCha.jpg"
   ],
   [
     "달란타이 문크게렐",
     "Munkhgerel Dalantai",
     "박사과정",
-    ""
+    "",
+    "MunkhgerelDalantai.jpg"
   ],
   [
     "노윤주",
     "Yoonjoo Noh",
     "박사과정",
-    ""
+    "",
+    "YoonjooNoh.jpg"
   ],
   [
     "우정재",
     "Jung-Jae Woo",
     "박사후연구원",
-    "Life Aging Center 공동연구"
+    "Life Aging Center 공동연구",
+    "Jung-JaeWoo.jpg"
   ],
   [
     "서창완",
     "Chang Wan Seo",
     "박사후연구원",
-    "G-LAMP 공동연구"
+    "G-LAMP 공동연구",
+    "ChangWanSeo.PNG"
   ],
   [
     "변하연",
     "Hayeon Byun",
     "전임연구원",
-    ""
+    "",
+    "HayeonByun.jpg"
   ],
   [
     "조수민",
     "Sumin Jo",
     "전임연구원",
-    ""
+    "",
+    "SuminJo.PNG"
   ]
 ];
 
 /* ── 함께했던 사람들 ─────────────────────────────────────
-   순서: [이름, 영문이름, 당시 직위, 현재 소속]
-   사진은 assets/people/ 폴더에 넣고 파일 이름을 영문이름과 맞추면 됩니다. */
+   순서: [이름, 영문이름, 당시 직위, 현재 소속, 사진파일명]           */
 const ALUMNI = [
   [
     "박기형",
     "Ki Hyeong Park",
     "박사후연구원",
-    "국립산림과학원"
+    "국립산림과학원",
+    "KiHyeongPark.jpg"
   ],
   [
     "양지호",
     "Jiho Yang",
     "박사후연구원",
-    "University of Hawaii"
+    "University of Hawaii",
+    "JihoYang.jpg"
   ],
   [
     "오아미",
     "Ami Oh",
     "박사후연구원",
-    "국립수목원"
+    "국립수목원",
+    "AmiOh.jpg"
   ],
   [
     "최현준",
     "Hyunjun Choi",
     "석사 졸업",
-    "연구원"
+    "연구원",
+    "HyunjunChoi.jpg"
   ],
   [
     "장윤혁",
     "Yunhyeok Jang",
     "석사 졸업",
-    "연구원"
+    "연구원",
+    "YunhyeokJang.jpg"
   ]
 ];
 
