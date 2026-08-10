@@ -57,9 +57,11 @@ function pubList(host, filterNos){
   var lastY=null;
   rows.forEach(function(p){
     if(!filterNos && p[1]!==lastY){ lastY=p[1]; t.appendChild(el('<div class="yr">'+p[1]+'</div>')); }
+    var ti = p[5] ? '<a href="https://doi.org/'+p[5]+'" target="_blank" rel="noopener">'+p[3]+'</a>' : p[3];
+    var dl = p[5] ? ' <a class="doi" href="https://doi.org/'+p[5]+'" target="_blank" rel="noopener">DOI</a>' : '';
     t.appendChild(el('<div class="pub"><div class="no">'+(filterNos?'':p[0])+
-      '</div><div><div class="ti">'+p[3]+'</div><div class="au">'+p[2]+
-      '</div><div class="ve">'+p[4]+'</div></div></div>'));
+      '</div><div><div class="ti">'+ti+'</div><div class="au">'+p[2]+' ('+p[1]+')'+
+      '</div><div class="ve">'+p[4]+dl+'</div></div></div>'));
   });
 }
 function memberCards(host){
@@ -83,10 +85,23 @@ function alumniRows(host){
       a[1]+'</span></div><div class="v">'+a[2]+' → '+a[3]+'</div></div>'));
   });
 }
+function alumniCards(host, en){
+  var t=document.getElementById(host); if(!t) return;
+  ALUMNI.forEach(function(a){
+    t.appendChild(el('<div class="pcard"><div class="ph">'+(en?'PHOTO':'사진')+'</div><b>'+
+      (en?a[1]:a[0])+'</b><span>'+a[2]+'<br><span class="now">→ '+a[3]+'</span></span></div>'));
+  });
+}
 </script>
 <script>pubList('pubs',PAGE_PUBS['lichen']);</script><footer><div class="wrap">
   <div><img src="assets/logo.png" alt=""><b>공생미생물연구실</b>Laboratory of Microbial Symbiosis<br>국립창원대학교 GAST-인공지능대학<br>AI생명과학전공</div>
   <div><b>연락처</b>syoh@changwon.ac.kr<br>055-213-3453</div>
   <div><b>바로가기</b><a href="https://scholar.google.com/citations?user=5TjyDbQAAAAJ">Google Scholar</a><br><a href="https://orcid.org/0000-0002-9745-1849">ORCID</a><br><a href="https://symbiohlab.blogspot.com">연구실 블로그</a></div>
 </div><div class="copy">© Laboratory of Microbial Symbiosis, Changwon National University</div></footer>
+<script>
+/* 바깥 사이트로 나가는 링크는 모두 새 창에서 열립니다 */
+document.querySelectorAll('a[href^="http"]').forEach(function(a){
+  if(a.host && a.host !== location.host){ a.target='_blank'; a.rel='noopener noreferrer'; }
+});
+</script>
 </body></html>

@@ -14,7 +14,7 @@
 <nav class="nav"><div class="wrap">
   <a class="logo" href="../index.html"><img src="../assets/logo.png" alt="Symbioh Lab"></a>
   <button class="burger" aria-label="menu" onclick="document.getElementById('m').classList.toggle('open')">☰</button>
-  <div class="menu" id="m"><a href="index.html">Home</a><a href="research.html" class="on">Research</a><a href="../publications.html">Publications</a><a href="people.html">People</a><a href="join.html" class="j">Join Us</a><a href="../index.html" class="lang">한국어</a></div>
+  <div class="menu" id="m"><a href="index.html">Home</a><a href="research.html" class="on">Research</a><a href="publications.html">Publications</a><a href="people.html">People</a><a href="join.html" class="j">Join Us</a><a href="../index.html" class="lang">한국어</a></div>
 </div></nav>
 
 <header class="phead"><div class="wrap"><h1>Research</h1>
@@ -51,4 +51,10 @@
   <div><b>Contact</b>syoh@changwon.ac.kr<br>+82-55-213-3453</div>
   <div><b>Links</b><a href="https://scholar.google.com/citations?user=5TjyDbQAAAAJ">Google Scholar</a><br><a href="https://orcid.org/0000-0002-9745-1849">ORCID</a><br><a href="https://symbiohlab.blogspot.com">Blog</a></div>
 </div><div class="copy">© Laboratory of Microbial Symbiosis, Changwon National University</div></footer>
+<script>
+/* 바깥 사이트로 나가는 링크는 모두 새 창에서 열립니다 */
+document.querySelectorAll('a[href^="http"]').forEach(function(a){
+  if(a.host && a.host !== location.host){ a.target='_blank'; a.rel='noopener noreferrer'; }
+});
+</script>
 </body></html>

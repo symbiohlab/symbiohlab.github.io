@@ -1,30 +1,41 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>소식 | 공생미생물연구실</title>
-<meta name="description" content="연구실 소식과 논문 게재 기록.">
-<meta property="og:title" content="소식 | 공생미생물연구실">
-<meta property="og:description" content="연구실 소식과 논문 게재 기록.">
-<link rel="icon" href="assets/favicon.png">
-<link rel="stylesheet" href="assets/style.css">
+<title>Publications | Laboratory of Microbial Symbiosis</title>
+<meta name="description" content="Peer-reviewed articles published since 2012.">
+<meta property="og:title" content="Publications | Laboratory of Microbial Symbiosis">
+<meta property="og:description" content="Peer-reviewed articles published since 2012.">
+<link rel="icon" href="../assets/favicon.png">
+<link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
 <nav class="nav"><div class="wrap">
-  <a class="logo" href="index.html"><img src="assets/logo.png" alt="Symbioh Lab"></a>
+  <a class="logo" href="../index.html"><img src="../assets/logo.png" alt="Symbioh Lab"></a>
   <button class="burger" aria-label="menu" onclick="document.getElementById('m').classList.toggle('open')">☰</button>
-  <div class="menu" id="m"><a href="index.html">홈</a><span class="sub"><a href="research.html">연구</a><span class="subm"><a href="lichen.html">지의류</a><a href="matsutake.html">송이</a><a href="diversity.html">다양성과 군집 패턴</a><a href="animals.html">동물</a></span></span><a href="publications.html">논문</a><a href="people.html">구성원</a><a href="news.html" class="on">소식</a><a href="join.html" class="j">참여하기</a><a href="en/index.html" class="lang">EN</a></div>
+  <div class="menu" id="m"><a href="index.html">Home</a><a href="research.html">Research</a><a href="publications.html" class="on">Publications</a><a href="people.html">People</a><a href="join.html" class="j">Join Us</a><a href="../index.html" class="lang">한국어</a></div>
 </div></nav>
 
-<header class="phead"><div class="wrap"><h1>소식</h1>
-  <p>논문 게재, 수상, 과제 선정, 새로운 구성원 소식을 기록합니다.</p></div></header>
+<header class="phead"><div class="wrap">
+  <h1>Publications</h1>
+  <p>Peer-reviewed articles published since 2012.</p>
+</div></header>
 <section><div class="wrap">
-  <div class="btns" style="margin-bottom:30px">
-    <a class="b3" href="https://symbiohlab.blogspot.com">연구실 블로그 →</a></div>
-  <div class="newsl newsfull" style="grid-template-columns:1fr" id="all"></div>
+  <p class="legend">In the author lists, <b>bold</b> indicates lab members,
+     * corresponding author, and † co-first author. Titles link to the published article.</p>
+  <div class="btns" style="margin-bottom:34px">
+    <a class="b3" href="https://scholar.google.com/citations?user=5TjyDbQAAAAJ">Google Scholar</a>
+    <a class="b3" href="https://orcid.org/0000-0002-9745-1849">ORCID</a>
+  </div>
+  <p class="kick">SELECTED</p>
+  <h2 style="margin-bottom:18px">Selected publications</h2>
+  <div class="selpub" id="sel"></div>
+  <p class="kick" style="margin-top:44px">ALL PUBLICATIONS</p>
+  <h2 style="margin-bottom:6px">Full list</h2>
+  <div id="all"></div>
 </div></section>
-<script src="content.js"></script>
+<script src="../content.js"></script>
 <script>
 function el(h){var d=document.createElement('div');d.innerHTML=h.trim();return d.firstChild;}
 function ymd(s){var p=(s||'').split('.');return {y:p[0]||'',m:p[1]||'00',d:p[2]||'00'};}
@@ -90,10 +101,10 @@ function alumniCards(host, en){
   });
 }
 </script>
-<script>newsAll('all');</script><footer><div class="wrap">
-  <div><img src="assets/logo.png" alt=""><b>공생미생물연구실</b>Laboratory of Microbial Symbiosis<br>국립창원대학교 GAST-인공지능대학<br>AI생명과학전공</div>
-  <div><b>연락처</b>syoh@changwon.ac.kr<br>055-213-3453</div>
-  <div><b>바로가기</b><a href="https://scholar.google.com/citations?user=5TjyDbQAAAAJ">Google Scholar</a><br><a href="https://orcid.org/0000-0002-9745-1849">ORCID</a><br><a href="https://symbiohlab.blogspot.com">연구실 블로그</a></div>
+<script>pubList('sel',FEATURED);pubList('all');</script><footer><div class="wrap">
+  <div><img src="../assets/logo.png" alt=""><b>Laboratory of Microbial Symbiosis</b>Symbioh Lab<br>Department of AI-Integrated Biological Sciences<br>Glocal Advanced Institute of Science &amp; Technology - Artificial Intelligence<br>Changwon National University</div>
+  <div><b>Contact</b>syoh@changwon.ac.kr<br>+82-55-213-3453</div>
+  <div><b>Links</b><a href="https://scholar.google.com/citations?user=5TjyDbQAAAAJ">Google Scholar</a><br><a href="https://orcid.org/0000-0002-9745-1849">ORCID</a><br><a href="https://symbiohlab.blogspot.com">Blog</a></div>
 </div><div class="copy">© Laboratory of Microbial Symbiosis, Changwon National University</div></footer>
 <script>
 /* 바깥 사이트로 나가는 링크는 모두 새 창에서 열립니다 */
