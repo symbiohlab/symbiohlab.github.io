@@ -152,7 +152,7 @@ ol.steps li{margin-bottom:10px}
 /* ── 푸터 ── */
 footer{background:var(--ink);color:rgba(255,255,255,.5);font-size:13.5px}
 footer .wrap{padding:40px 40px;display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:26px}
-footer img{height:22px;margin-bottom:12px}
+footer img{height:38px;margin-bottom:12px}
 footer b{color:rgba(255,255,255,.9);display:block;margin-bottom:7px;font-size:14px}
 footer a{color:rgba(255,255,255,.62)}
 footer a:hover{color:#fff}
