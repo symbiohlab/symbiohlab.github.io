@@ -24,7 +24,7 @@ a{color:inherit;text-decoration:none}
 /* ── 상단 고정 메뉴 ── */
 .nav{position:sticky;top:0;z-index:60;background:var(--ink);color:#fff}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:20px}
-.nav .logo img{height:26px}
+.nav .logo img{height:44px} # 메인 로고크기
 .menu{display:flex;gap:20px;font-size:14px;font-weight:600;align-items:center}
 .menu a{color:rgba(255,255,255,.62);padding:4px 0;transition:.15s}
 .menu a:hover{color:#fff}
