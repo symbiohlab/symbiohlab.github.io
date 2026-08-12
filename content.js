@@ -24,7 +24,7 @@ const PUBLICATIONS = [
     2026,
     "Cha Y, You Y-H, Lee S-Y, Jung H-Y, Kim C, <b>Oh S-Y</b>",
     "The complete mitochondrial genome of <i>Fusicolla acetilerea</i> (Nectriaceae, Hypocreales)",
-    "Mitochondrial DNA Part B",
+    "Mitochondrial DNA Part B 11(3): 419-423",
     "10.1080/23802359.2026.2630474"
   ],
   [
@@ -32,7 +32,7 @@ const PUBLICATIONS = [
     2026,
     "<b>Oh S-Y*</b>, Hwang J-A, Jeong HS, Cha Y",
     "Temporal turnover of aquatic fungal communities driven by water quality changes in FLOCponics Japanese eel aquaculture system",
-    "Journal of Fungi",
+    "Journal of Fungi 12(2): 110",
     "10.3390/jof12020110"
   ],
   [
@@ -48,7 +48,7 @@ const PUBLICATIONS = [
     2026,
     "Dalantai M, <b>Oh S-Y</b>",
     "The complete mitochondrial genome sequence of <i>Trichoderma texanum</i> (Hypocreales, Sordariomycetes)",
-    "Mitochondrial DNA Part B",
+    "Mitochondrial DNA Part B 11(3): 383-387",
     "10.1080/23802359.2026.2626067"
   ],
   [
@@ -56,7 +56,7 @@ const PUBLICATIONS = [
     2026,
     "Park KH†, <b>Oh S-Y†</b>, Yoo S, Cho Y, Kim JS, Seo CW, Kim CS, Lim YW",
     "Effects of sequencing platforms on the profiling of root mycorrhizal communities in <i>Pinus densiflora</i>",
-    "Journal of Microbiology",
+    "Journal of Microbiology 64(1): e2509008",
     "10.71150/jm.2509008"
   ],
   [
@@ -64,7 +64,7 @@ const PUBLICATIONS = [
     2026,
     "You YH, Kim M, Lee H, Kim C, <b>Oh S-Y</b>",
     "Genome sequences of three Polyporaceae species (Polyporales, Basidiomycota) from South Korea",
-    "Mycobiology",
+    "Mycobiology 54(1): 161-166",
     "10.1080/12298093.2025.2609415"
   ],
   [
@@ -72,7 +72,7 @@ const PUBLICATIONS = [
     2026,
     "Yang J, Park JS, Oh SO, <b>Oh S-Y</b>, Hur J-S",
     "Fungal microbiome within lichen as a potential bioindicator of climate change: Insights from transplant field study",
-    "Mycobiology",
+    "Mycobiology 54(1): 146-160",
     "10.1080/12298093.2025.2612418"
   ],
   [
@@ -80,7 +80,7 @@ const PUBLICATIONS = [
     2026,
     "Yang J, Seo J, Choi J, Cha Y, Jang Y, Hwang JA*, <b>Oh S-Y*</b>",
     "Achievement of prosperous nitrification cycle fosters diversity in freshwater microbiome within recirculating aquaculture systems after adjustment period",
-    "Aquaculture 742941",
+    "Aquaculture 610: 742941",
     "10.1016/j.aquaculture.2025.742941"
   ],
   [
@@ -88,7 +88,7 @@ const PUBLICATIONS = [
     2025,
     "<b>Oh S-Y</b>, Park MS",
     "Fungal diversity associated with the Joro spider <i>Trichonephila clavata</i> in urban parks and mountain forests of Changwon, South Korea",
-    "The Korean Journal of Mycology",
+    "The Korean Journal of Mycology 53(4): 393-404",
     "10.4489/kjm.2025.53.4.15"
   ],
   [
@@ -96,7 +96,7 @@ const PUBLICATIONS = [
     2025,
     "Woo J-J, Lücking R, <b>Oh S-Y</b>, Jeun Y-C, Hur J-S",
     "Uncovering hidden lineages in Korean foliicolous lichens (Strigulaceae, Strigulales): Discovery of a new cryptic genus and species",
-    "Mycobiology",
+    "Mycobiology 53(4): 556-571",
     "10.1080/12298093.2025.2530843"
   ],
   [
@@ -104,7 +104,7 @@ const PUBLICATIONS = [
     2025,
     "Noh Y, Cha Y, <b>Oh S-Y</b>",
     "Comparative analysis of the mycobiomes of two terrestrial isopods, <i>Armadillidium vulgare</i> and <i>Spherillo obscurus</i>",
-    "Mycobiology",
+    "Mycobiology 53(4): 520-530",
     "10.1080/12298093.2025.2524925"
   ],
   [
@@ -112,7 +112,7 @@ const PUBLICATIONS = [
     2025,
     "<b>Oh S-Y</b>, Jang Y",
     "New <i>Trichoderma</i> species and six unrecorded species of endolichenic fungi isolated from lichens",
-    "Mycobiology",
+    "Mycobiology 53(4): 435-449",
     "10.1080/12298093.2025.2519854"
   ],
   [
@@ -120,7 +120,7 @@ const PUBLICATIONS = [
     2025,
     "<b>Oh S-Y</b>, Woo J-J, Hur J-S",
     "Distribution and genetic diversity of the Korean foliicolous lichen, <i>Strigula depressa</i>",
-    "Mycobiology",
+    "Mycobiology 53(4): 412-420",
     "10.1080/12298093.2025.2518793"
   ],
   [
@@ -136,7 +136,7 @@ const PUBLICATIONS = [
     2025,
     "Yang J, Choi H, Park JS, Cha Y, Hwang J-A, <b>Oh S-Y</b>",
     "Biofloc technology significantly reshapes water microbiome and improves survival rates in Japanese eel (<i>Anguilla japonica</i>)",
-    "Microbiology Spectrum",
+    "Microbiology Spectrum 13(2): e02206-24",
     "10.1128/spectrum.02206-24"
   ],
   [
@@ -144,7 +144,7 @@ const PUBLICATIONS = [
     2024,
     "<b>Oh S-Y</b>, Jang Y",
     "First report of <i>Metarhizium viridulum</i> isolated from the cicada (<i>Cryptotympana atrata</i>) in South Korea",
-    "The Korean Journal of Mycology",
+    "The Korean Journal of Mycology 52(4): 413-417",
     "10.4489/kjm.520419"
   ],
   [
@@ -152,7 +152,7 @@ const PUBLICATIONS = [
     2024,
     "<b>Oh S-Y</b>, Cha Y",
     "Influence of host sex on mycobiome structure in <i>Porcellio laevis</i> using metabarcoding analysis",
-    "The Korean Journal of Mycology",
+    "The Korean Journal of Mycology 52(4): 331-340",
     "10.4489/kjm.520412"
   ],
   [
@@ -160,7 +160,7 @@ const PUBLICATIONS = [
     2024,
     "<b>Oh S-Y</b>",
     "Archaeal diversity in fairy ring soil of <i>Tricholoma matsutake</i> using a metabarcoding analysis",
-    "Journal of Mushrooms",
+    "Journal of Mushrooms 22(4): 244-249",
     "10.14480/JM.2024.22.4.244"
   ],
   [
@@ -168,7 +168,7 @@ const PUBLICATIONS = [
     2024,
     "Choi H, Park JS, Hwang J-A, Kim S-K, Cha Y, <b>Oh S-Y</b>",
     "Influence of biofloc technology and continuous flow systems on aquatic microbiota and water quality in Japanese eel aquaculture",
-    "Diversity",
+    "Diversity 16(10): 601",
     "10.3390/d16100601"
   ],
   [
@@ -176,7 +176,7 @@ const PUBLICATIONS = [
     2024,
     "<b>Oh S-Y</b>",
     "The complete mitochondrial genome of <i>Clonostachys farinosa</i> (Bionectriaceae, Hypocreales)",
-    "Mitochondrial DNA Part B",
+    "Mitochondrial DNA Part B 9(5): 583-587",
     "10.1080/23802359.2024.2347510"
   ],
   [
@@ -184,7 +184,7 @@ const PUBLICATIONS = [
     2024,
     "Kherlenchimeg N, Burenbaatar G, Baasanmunkh S, Tsegmed Z, Urgamal M, Bau T, Han S-K, <b>Oh S-Y*</b>, Choi HJ*",
     "Improved understanding of the macrofungal diversity of Mongolia: Species richness, conservation status, and an annotated checklist",
-    "Mycobiology",
+    "Mycobiology 52(1): 13-29",
     "10.1080/12298093.2023.2297485"
   ],
   [
@@ -192,7 +192,7 @@ const PUBLICATIONS = [
     2024,
     "Jang JE, Baasanmunkh S, Nyamgerel N, <b>Oh S-Y</b>, Song JH, Yusupov Z, Tojibaev K, Choi HJ",
     "Flower morphology of <i>Allium</i> (Amaryllidaceae) and its systematic significance",
-    "Plant Diversity",
+    "Plant Diversity 46(1): 3-27",
     "10.1016/j.pld.2023.06.009"
   ],
   [
@@ -200,7 +200,7 @@ const PUBLICATIONS = [
     2023,
     "Yang J, Woo JJ, Kim W, <b>Oh S-Y</b>, Hur JS",
     "Exploring the influence of climatic variables on mycobiome composition and community diversity in lichens: insights from structural equation modeling analysis",
-    "Environmental Microbiome",
+    "Environmental Microbiome 18: 79",
     "10.1186/s40793-023-00535-4"
   ],
   [
@@ -208,7 +208,7 @@ const PUBLICATIONS = [
     2023,
     "Yang J, Woo JJ, <b>Oh S-Y</b>, Kim W, Hur JS",
     "Fungal community inside lichen: a curious case of sparse diversity and high modularity",
-    "Environmental Microbiome",
+    "Environmental Microbiome 18: 73",
     "10.1186/s40793-023-00531-8"
   ],
   [
@@ -216,7 +216,7 @@ const PUBLICATIONS = [
     2023,
     "Hwang J-A, Park JS, Jeong HS, Kim H, <b>Oh S-Y</b>",
     "Productivity of fish and crop growth and characteristics of bacterial communities in the FLOCponics system",
-    "Fishes",
+    "Fishes 8(8): 422",
     "10.3390/fishes8080422"
   ],
   [
@@ -248,7 +248,7 @@ const PUBLICATIONS = [
     2022,
     "Son H, <b>Oh S-Y</b>, Lee K",
     "Genome sequences of the human-skin-originated <i>Brevundimonas albigilva</i> TT17 and the soil-originated <i>B. albigilva</i> KEME 9005-016T",
-    "Microbiology Resource Announcements e00776-22",
+    "Microbiology Resource Announcements 11(10): e00776-22",
     "10.1128/mra.00776-22"
   ],
   [
@@ -424,7 +424,7 @@ const PUBLICATIONS = [
     2018,
     "<b>Oh S-Y</b>, Park MS, Cho HJ, Lim YW",
     "Diversity and effect of <i>Trichoderma</i> isolated from the roots of <i>Pinus densiflora</i> within the fairy ring of pine mushroom (<i>Tricholoma matsutake</i>)",
-    "PLoS ONE",
+    "PLoS ONE 13(11): e0205900",
     "10.1371/journal.pone.0205900"
   ],
   [
@@ -432,7 +432,7 @@ const PUBLICATIONS = [
     2018,
     "Cho HJ, Park MS, Lee H, <b>Oh S-Y</b>, Wilson AW, Mueller GM, Lim YW",
     "A systematic revision of the ectomycorrhizal genus <i>Laccaria</i> from Korea",
-    "Mycologia",
+    "Mycologia 110(5): 948-961",
     "10.1080/00275514.2018.1507542"
   ],
   [
@@ -440,7 +440,7 @@ const PUBLICATIONS = [
     2018,
     "<b>Oh S-Y</b>, Lim YW",
     "Effect of fairy ring bacteria on the growth of <i>Tricholoma matsutake</i> in vitro culture",
-    "Mycorrhiza",
+    "Mycorrhiza 28(5): 411-419",
     "10.1007/s00572-018-0828-x"
   ],
   [
@@ -448,7 +448,7 @@ const PUBLICATIONS = [
     2018,
     "<b>Oh S-Y</b>, Lim YW",
     "Root-associated bacteria influencing mycelial growth of <i>Tricholoma matsutake</i> (pine mushroom)",
-    "Journal of Microbiology",
+    "Journal of Microbiology 56(6): 399-407",
     "10.1007/s12275-018-7491-y"
   ],
   [
@@ -456,7 +456,7 @@ const PUBLICATIONS = [
     2018,
     "Park MS, <b>Oh S-Y</b>, Lee S, Eimes JA, Lim YW",
     "Fungal diversity and enzyme activity associated with sailfin sandfish egg masses in Korea",
-    "Fungal Ecology",
+    "Fungal Ecology 34: 1-9",
     "10.1016/j.funeco.2018.03.004"
   ],
   [
@@ -464,7 +464,7 @@ const PUBLICATIONS = [
     2018,
     "<b>Oh S-Y</b>, Cho HJ, Eimes JA, Han S-L, Kim CS, Lim YW",
     "Guild patterns of basidiomycetes community associated with <i>Quercus mongolica</i> in Mt. Jeombong, Republic of Korea",
-    "Mycobiology",
+    "Mycobiology 46(1): 13-23",
     "10.1080/12298093.2018.1454009"
   ],
   [
@@ -472,7 +472,7 @@ const PUBLICATIONS = [
     2018,
     "<b>Oh S-Y</b>, Kim M, Eimes JA, Lim YW",
     "Effect of fruiting body bacteria on the growth of <i>Tricholoma matsutake</i> and its related molds",
-    "PLoS ONE",
+    "PLoS ONE 13(2): e0190948",
     "10.1371/journal.pone.0190948"
   ],
   [
@@ -480,7 +480,7 @@ const PUBLICATIONS = [
     2018,
     "Park MS, Eimes JA, Oh SH, Seo HJ, <b>Oh S-Y</b>, Lee S, Park KH, Kwon HJ, Kim S-Y, Lim YW",
     "Diversity of fungi associated with roots of <i>Calanthe</i> orchid species in Korea",
-    "Journal of Microbiology",
+    "Journal of Microbiology 56(1): 49-55",
     "10.1007/s12275-018-7319-9"
   ],
   [
@@ -488,7 +488,7 @@ const PUBLICATIONS = [
     2018,
     "Nilsson RH, Taylor AFS, Adams RI, … <b>Oh S-Y</b>, … Kõljalg U, Abarenkov K",
     "Taxonomic annotation of public fungal ITS sequences from the built environment",
-    "MycoKeys",
+    "MycoKeys 28: 65-82",
     "10.3897/mycokeys.28.20887"
   ],
   [
@@ -496,15 +496,15 @@ const PUBLICATIONS = [
     2017,
     "Jargalmaa S, Eimes JA, Park MS, Park JY, <b>Oh S-Y</b>, Lim YW",
     "Taxonomic evaluation of selected <i>Ganoderma</i> species and database sequence validation",
-    "PeerJ",
-    ""
+    "PeerJ 5: e3596",
+    "10.7717/peerj.3596"
   ],
   [
     15,
     2016,
     "<b>Oh S-Y</b>, Fong JJ, Park MS, Lim YW",
     "Distinctive feature of microbial communities and bacterial functional profiles in <i>Tricholoma matsutake</i> dominant soil",
-    "PLoS ONE",
+    "PLoS ONE 11(12): e0168573",
     "10.1371/journal.pone.0168573"
   ],
   [
@@ -512,7 +512,7 @@ const PUBLICATIONS = [
     2016,
     "Park MS, Lee S, <b>Oh S-Y</b>, Cho GY, Lim YW",
     "Diversity and enzyme activity of <i>Penicillium</i> species associated with macroalgae in Jeju Island",
-    "Journal of Microbiology",
+    "Journal of Microbiology 54(10): 646-654",
     "10.1007/s12275-016-6324-0"
   ],
   [
@@ -520,7 +520,7 @@ const PUBLICATIONS = [
     2015,
     "Cho HJ, Park MS, Lee H, <b>Oh S-Y</b>, Jang Y, Fong JJ, Lim YW",
     "Four new species of <i>Amanita</i> in Inje County, Korea",
-    "Mycobiology",
+    "Mycobiology 43(4): 408-414",
     "10.5941/MYCO.2015.43.4.408"
   ],
   [
@@ -528,7 +528,7 @@ const PUBLICATIONS = [
     2015,
     "Lee H, Park MS, Jung PE, Fong JJ, <b>Oh S-Y</b>, Verbeken A, Lim YW",
     "<i>Lactarius cucurbitoides</i> (Russulales, Basidiomycota), a new species from South Korea supported by molecular and morphological data",
-    "Phytotaxa",
+    "Phytotaxa 205(3): 168-176",
     "10.11646/phytotaxa.205.3.4"
   ],
   [
@@ -536,7 +536,7 @@ const PUBLICATIONS = [
     2015,
     "Park MS, Fong JJ, <b>Oh S-Y</b>, Houbraken J, Sohn JH, Hong SB, Lim YW",
     "<i>Penicillium jejuense</i> sp. nov., isolated from the marine environments of Jeju Island, Korea",
-    "Mycologia",
+    "Mycologia 107(1): 209-216",
     "10.3852/14-180"
   ],
   [
@@ -544,7 +544,7 @@ const PUBLICATIONS = [
     2014,
     "Jung PE, Fong JJ, Park MS, <b>Oh S-Y</b>, Kim C, Lim YW",
     "Sequence validation for the identification of the white-rot fungi <i>Bjerkandera</i> in public sequence databases",
-    "Journal of Microbiology and Biotechnology",
+    "Journal of Microbiology and Biotechnology 24(10): 1301-1307",
     "10.4014/jmb.1404.04021"
   ],
   [
@@ -552,7 +552,7 @@ const PUBLICATIONS = [
     2014,
     "Park MS, <b>Oh S-Y</b>, Cho HJ, Fong JJ, Cheon WJ, Lim YW",
     "<i>Trichoderma songyi</i> sp. nov., a new species associated with the pine mushroom (<i>Tricholoma matsutake</i>)",
-    "Antonie van Leeuwenhoek",
+    "Antonie van Leeuwenhoek 106(4): 593-603",
     "10.1007/s10482-014-0230-4"
   ],
   [
@@ -560,7 +560,7 @@ const PUBLICATIONS = [
     2014,
     "Park MS, Lee H, <b>Oh S-Y</b>, Jung PE, Seok SJ, Fong JJ, Lim YW",
     "Species delimitation of three species within the <i>Russula</i> subgenus <i>Compacta</i> in Korea: <i>R. eccentrica</i>, <i>R. nigricans</i>, and <i>R. subnigricans</i>",
-    "Journal of Microbiology",
+    "Journal of Microbiology 52(8): 631-638",
     "10.1007/s12275-014-4168-z"
   ],
   [
@@ -568,7 +568,7 @@ const PUBLICATIONS = [
     2014,
     "Park MS, Fong JJ, <b>Oh S-Y</b>, Kwon KK, Sohn JH, Lim YW",
     "Marine-derived <i>Penicillium</i> in Korea: diversity, enzyme activity, and antifungal properties",
-    "Antonie van Leeuwenhoek",
+    "Antonie van Leeuwenhoek 106(2): 331-345",
     "10.1007/s10482-014-0205-5"
   ],
   [
@@ -576,7 +576,7 @@ const PUBLICATIONS = [
     2014,
     "Park MS, Quan Y, Jung PE, <b>Oh S-Y</b>, Jang Y, Kim JJ, Lim YW",
     "Re-evaluation of the genus <i>Antrodia</i> (Polyporales, Basidiomycota) in Korea",
-    "Mycobiology",
+    "Mycobiology 42(2): 114-119",
     "10.5941/MYCO.2014.42.2.114"
   ],
   [
@@ -584,7 +584,7 @@ const PUBLICATIONS = [
     2014,
     "Lee WD, Lee H, Fong JJ, <b>Oh S-Y</b>, Park MS, Quan Y, Jung PE, Lim YW",
     "A checklist of the basidiomycetous macrofungi and a record of five new species from Mt. Oseo in Korea",
-    "Mycobiology",
+    "Mycobiology 42(2): 132-139",
     "10.5941/MYCO.2014.42.2.132"
   ],
   [
@@ -592,7 +592,7 @@ const PUBLICATIONS = [
     2014,
     "<b>Oh S-Y</b>, Fong JJ, Park MS, Chang L, Lim YW",
     "Identifying airborne fungi in Seoul, Korea using metagenomics",
-    "Journal of Microbiology",
+    "Journal of Microbiology 52(6): 465-472",
     "10.1007/s12275-014-3550-1"
   ],
   [
@@ -600,7 +600,7 @@ const PUBLICATIONS = [
     2014,
     "Kim TE, <b>Oh S-Y</b>, Chang E, Jang Y",
     "Host availability hypothesis: complex interactions with abiotic factors and predators may best explain population densities of cicada species",
-    "Animal Cells and Systems",
+    "Animal Cells and Systems 18(2): 143-153",
     "10.1080/19768354.2014.906501"
   ],
   [
@@ -608,7 +608,7 @@ const PUBLICATIONS = [
     2013,
     "Park MS, Fong JJ, Lee H, <b>Oh S-Y</b>, Jung PE, Min YJ, Seok SJ, Lim YW",
     "Delimitation of <i>Russula</i> subgenus <i>Amoenula</i> in Korea using three molecular markers",
-    "Mycobiology",
+    "Mycobiology 41(4): 191-201",
     "10.5941/MYCO.2013.41.4.191"
   ],
   [
@@ -616,7 +616,7 @@ const PUBLICATIONS = [
     2012,
     "Lee HY, <b>Oh S-Y</b>, Jang Y",
     "Morphometrics of the final instar exuviae of five cicada species occurring in urban areas of central Korea",
-    "Journal of Asia-Pacific Entomology",
+    "Journal of Asia-Pacific Entomology 15(4): 627-630",
     "10.1016/j.aspen.2012.07.004"
   ]
 ];

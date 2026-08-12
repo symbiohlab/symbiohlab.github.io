@@ -78,10 +78,10 @@ function pubList(host, filterNos){
   rows.forEach(function(p){
     if(!filterNos && p[1]!==lastY){ lastY=p[1]; t.appendChild(el('<div class="yr">'+p[1]+'</div>')); }
     var ti = p[5] ? '<a href="https://doi.org/'+p[5]+'" target="_blank" rel="noopener">'+p[3]+'</a>' : p[3];
-    var dl = p[5] ? ' <a class="doi" href="https://doi.org/'+p[5]+'" target="_blank" rel="noopener">DOI</a>' : '';
+    var dl = p[5] ? '<div class="doi">https://doi.org/'+p[5]+'</div>' : '';
     t.appendChild(el('<div class="pub"><div class="no">'+(filterNos?'':p[0])+
       '</div><div><div class="ti">'+ti+'</div><div class="au">'+p[2]+' ('+p[1]+')'+
-      '</div><div class="ve">'+p[4]+dl+'</div></div></div>'));
+      '</div><div class="ve">'+p[4]+'</div>'+dl+'</div></div>'));
   });
 }
 function T(s){ return (typeof EN_TERMS!=='undefined' && EN_TERMS[s]) ? EN_TERMS[s] : s; }
